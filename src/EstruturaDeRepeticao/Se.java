@@ -1,0 +1,29 @@
+package EstruturaDeRepeticao;
+
+import java.util.Scanner;
+
+public class Se {
+    public static void main(String[] args) {
+
+        Scanner entrada = new Scanner(System.in);
+
+        System.out.println("informe a média: ");
+        double media = entrada.nextDouble();
+
+        if(media >= 7.0){
+            System.out.println("Aprovado!");
+            System.out.println("Parabéns!");
+        }
+        if(media <= 7 && media > 5){
+            System.out.println("Recuração!");
+        }
+
+        if (media <= 5 && media >= 3) {
+            System.out.println("Reprovado!");
+        }
+
+
+        entrada.close();
+    }
+
+}
